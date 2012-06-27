@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+body {
+	margin: 0;
+	padding: 20px;
+	background: #fff;
+	color: #333;
+}
+
+a {
+	color: #06c;
+}
+
+
+
+/* ------------------------------------------------ */
+/* LAYOUT */
+/* ------------------------------------------------ */
+
+h1 {
+	margin: 0 0 20px 0;
+	color: #333;
+	font-size: 110%;
+	font-weight: bold;
+}
+h2 {
+	margin: 36px 0 10px 0;
+	color: #666;
+	font-size: 85%;
+	font-weight: bold;
+}
+h3 {
+	margin: 14px 0 14px 0;
+	color: #444;
+	font-size: 75%;
+	font-weight: bold;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 75%;
+}
+
+ul {
+	margin: 6px 0 0 24px;
+}
+li {
+	margin: 0 0 8px 0;
+	font-size: 75%;
+	list-style: disc;
+}

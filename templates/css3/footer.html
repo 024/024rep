@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS3</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<!--[if lt IE 7]>
+<style type="text/css">
+	#wrapper { height:100%; }
+</style>
+<![endif]-->
+</head>
+<style>
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#wrapper {
+    min-height:100%;
+    position:relative;
+}
+#header {
+    background:#ffffe0;
+    padding:10px;
+}
+#content {
+    padding-bottom:100px; /* Height of the footer element */
+}
+#footer {
+    text-align:center;
+    color: #444;
+    font-family: arial;
+    font-weight:bold;
+    background:#b0e0e6;
+    width:100%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+</style>
+<body>
+
+	<section id="wrapper">
+
+		<header id="header">
+        </header>
+         
+        <section id="content">
+            <button id="add">Add More...</button>
+            <button id="rm">Remove...</button>
+            <ul id="text"></ul>
+        </section><!-- #content -->
+         
+        <footer id="footer">
+         <p>Yay! This is a Sticky Footer</p>
+        </footer><!-- #footer -->
+         
+    </section><!-- #wrapper -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $("#add").click(function(){
+            $("#text").append("<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>");
+        });
+        $("#rm").click(function(){
+            if ($("#text li:first-child")){
+                $("#text li:first-child").remove();
+            }
+        });
+    });
+    </script>
+</body>
+ 
+</html>
